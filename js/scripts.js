@@ -1,10 +1,18 @@
 //business logic stuff for a particular module
-var ExampleModule = function(args) {
-  this.args = args; //to be replaced with constructor arguments
+
+
+var fahrenheit = function(x){
+  return 1.8 * (x - 273) + 32;
 };
 
-ExampleModule.prototype.examplePrototype = function() {
-  return 'this is an example prototype method';
+var celsius = function(x) {
+  return (x - 32) * 5 / 9;
 };
 
-exports.exampleModule = ExampleModule;
+exports.fahrenheitModule = fahrenheit;
+exports.celsiusModule = celsius;
+
+
+
+
+// Deduct 32, then multiply by 5, then divide by 9

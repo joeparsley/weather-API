@@ -11,7 +11,30 @@
   </head>
   <body>
     <div class="alarm">
-      <h3>HTML HERE</h3>
+      <div class="container">
+        <h1>Get Weather Conditions From Anywhere!</h1>
+        <label for="location">Enter a location:</label>
+        <input id="location" type="text">
 
+        <form id="selector">
+          <input type="radio" name="temperature" value="kelvin" checked> Kelvin<br>
+          <input type="radio" name="temperature" value="fahrenheit"> Fahrenheit<br>
+          <input type="radio" name="temperature" value="celsius"> Celsius
+          <br>
+          <button type="submit" class="btn">Submit!</button>
+        </form>
+        <div id="output">
+        </div>
+
+        <!-- HUMIDITY -->
+        <!-- <button class="btn-success" id="humidity-location">Get Current Humidity!</button>
+        <div class="showHumidity"></div>
+        <!-- TEMP IN FAHRENHEIT -->
+        <!-- <button class="btn-success" id="temperature-location">Get Current Temperature!</button>
+        <div class="showTemperature"></div>
+        <!-- TEMP IN C -->
+        <!-- <button class="btn-success" id="temperature-celsius">Get Current Temperature in celsius!</button>
+        <div class="showCelsius"></div> -->
+      </div>
   </body>
 </html>
